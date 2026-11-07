@@ -138,6 +138,26 @@ kubectl get hpa -w
 kubectl get pods -w
 ```
 
+## 📸 Project Screenshots
+
+### 1. Project Structure
+![Project Structure](screenshots/file-structure.png)
+
+### 2. Kubernetes Self-Healing
+![Self Healing](screenshots/self-healing.png)
+
+### 3. HPA Scaling Up
+![HPA Scaling](screenshots/hpa-scaling.png)
+
+### 4. HPA Scaling Down
+![HPA Scale Down](screenshots/hpa-scale-down.png)
+
+### 5. Pods Scale Down
+![Pods Scale Down](screenshots/pods-scale-down.png)
+
+### 6. Deployment Rollback
+![Rollback](screenshots/rollback.png)
+
 ## 📚 Key Learnings
 
 - Kubernetes Deployments and ReplicaSets
