@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-deployment
+  labels:
+    app: demo-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-deployment
+  template:
+    metadata:
+      labels:
+        app: demo-deployment
+    spec:
+      containers:
+      - name: kubernetes-demo
+        image: samidha7/kubernetes:1.0
+        ports:
+        - containerPort: 5000
+        env:
+        - name: APP_ENV
+          valueFrom:
+            configMapKeyRef:
+              name: config-demo
+              key: APP_ENV
+        - name: APP_VERSION
+          valueFrom:
+            configMapKeyRef:
+              name: config-demo
+              key: APP_VERSION
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "64Mi"
+          limits:
+            cpu: "500m"  
+            memory: "128Mi"    
