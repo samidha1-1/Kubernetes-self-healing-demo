@@ -156,7 +156,7 @@ kubectl get pods -w
 ![Pods Scale Down](screenshots/pods-scale-down.png)
 
 ### 6. Deployment Rollback
-![Rollback](screenshots/rollback.png)
+![Rollback](screenshots/rollback-.png)
 
 ## 📚 Key Learnings
 
